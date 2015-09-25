@@ -1,6 +1,6 @@
 require 'spec_helper_capybara'
 
-feature 'Sports Ladder Ladder Page' do
+feature '<application name>' do
 
   it 'should display a title' do
     visit '/'

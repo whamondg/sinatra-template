@@ -1,15 +1,12 @@
 require 'sinatra'
-require "sinatra/reloader"
 
 class App < Sinatra::Base
 
   set :root, File.dirname(__FILE__)
 
   configure :development do
+    require "sinatra/reloader"
     register Sinatra::Reloader
-  end
-
-  configure do
     enable :logging
   end
 
